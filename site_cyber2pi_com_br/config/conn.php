@@ -12,15 +12,20 @@ $conn = new conn;
 
 class conn{
     
-    public function conect($servidor, $usuario, $senha, $bd) {
+    public function conect($servidor, $usuario, $senha, $bd, $msgs_erro_0) {
 
-        define("servidor", $servidor);//Nome do servidor do banco de dados(localhost)
-        define("usuario", $usuario);//Nome do usuario do banco de dados
-        define("senha", $senha);//Senha do banco de dados
-        define("bd", $bd);//Nome do banco de dados
-
-        return mysqli_connect(servidor, usuario, senha, bd);
+        define(servidor, $servidor);//Nome do servidor do banco de dados(localhost)
+        define(usuario, $usuario);//Nome do usuario do banco de dados
+        define(senha, $senha);//Senha do banco de dados
+        define(bd, $bd);//Nome do banco de dados
         
+        $my_connect = mysqli_connect(servidor, usuario, senha, bd);
+        
+        if($my_connect){
+            return mysqli_connect(servidor, usuario, senha, bd);
+        }else{
+            echo $msgs_erro_0;
+        }
     }
     
 }
