@@ -24,5 +24,3 @@ include 'sons/index.php';
         ?>
     </body>
 </html>
-
-?>

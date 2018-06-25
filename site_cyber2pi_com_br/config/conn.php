@@ -12,8 +12,8 @@ $conn = new conn;
 
 class conn{
     
-    public function conect($servidor, $usuario, $senha, $bd, $msgs_erro_0) {
-
+   public function conect($servidor,$usuario,$senha,$bd,$msgs_erro_0) {
+        
         define(servidor, $servidor);//Nome do servidor do banco de dados(localhost)
         define(usuario, $usuario);//Nome do usuario do banco de dados
         define(senha, $senha);//Senha do banco de dados
