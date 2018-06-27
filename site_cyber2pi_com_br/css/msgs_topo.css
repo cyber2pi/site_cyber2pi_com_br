@@ -7,13 +7,9 @@ and open the template in the editor.
     Created on : 25/06/2018, 21:54:46
     Author     : Gustavo Vieira SSD
 */
-*{
-    font-family: monospace, verdana;
-    font-size: 18px;
-    color: #000000;
-}
+
 .msgs_topo_erro{
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -22,24 +18,25 @@ and open the template in the editor.
     background-color: #ff0033;
     color: #000000;
     padding: 10px;
-    size: 20px;
+    font-size: 20px;
+    z-index: 3;
 }
 
 .msgs_topo_acerto{
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: auto;
-    display: block;
     background-color: #006633;
     color: #000000;
     padding: 10px;
-    size: 20px;
+    font-size: 20px;
+    z-index: 3;
 }
 
 .msgs_topo_atencao{
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -48,5 +45,6 @@ and open the template in the editor.
     background-color: #ffcc00;
     color: #000000;
     padding: 10px;
-    size: 20px;
+    font-size: 20px;
+    z-index: 3;
 }

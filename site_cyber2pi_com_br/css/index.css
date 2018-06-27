@@ -1,0 +1,75 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 26/06/2018, 07:36:47
+    Author     : Gustavo Vieira SSD
+*/
+
+*{
+    font-family: monospace, verdana;
+    font-size: 16px;
+    color: #000000;
+}
+#div_topo{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 96px;
+    max-height: 256px;
+    display: block;
+    background-color: #4077bc;
+    color: #000000;
+    padding: 10px;
+    font-size: 20px;
+    clear: both;
+    z-index: 2;
+}
+#div_meio_rodape{
+    position: absolute;
+    top: 98px;
+    left: 0;
+    background-color: #ffffff;
+    width: 100%;
+    height: auto;
+    display: table; 
+    z-index: 1; 
+}
+#div_meio_conteudo{
+    padding: 10px;
+    margin: 25px 10px 128px 10px;
+}
+#div_meio_conteudo_dentro{
+    border: 1px solid #000000;
+    margin: 0 auto;
+    width: 100%;
+    display: table; 
+}
+.div_meio_conteudo_dentro_float{
+    float: left;
+    min-width: 32%;
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #000000;
+    margin: 2px;
+    padding: 5px; 
+    display: table;   
+}
+#div_rodape_conteudo{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #434343;
+    width: 100%;
+    min-height: 96px;
+    max-height: 512px; 
+    z-index: -1;
+    color: #ffffff;
+}
+#div_rodape_conteudo_dentro{
+    padding: 10px;
+    margin: 10px;
+}
